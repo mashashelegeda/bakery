@@ -2,27 +2,27 @@
     font-display: swap;
     font-family: 'Poppins';
     font-weight: 300;
-    src: url('../fonts/poppins-v21-latin-300.woff2') format('woff2');
+    src: url('./fonts/poppins-v21-latin-300.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Poppins';
     font-weight: 400;
-    src: url('../fonts/poppins-v21-latin-regular.woff2') format('woff2');
+    src: url('./fonts/poppins-v21-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
     font-display: swap;
     font-family: 'Poppins';
     font-weight: 600;
-    src: url('../fonts/poppins-v21-latin-600.woff2') format('woff2');
+    src: url('./fonts/poppins-v21-latin-600.woff2') format('woff2');
 }
 
 @font-face {
     font-display: swap;
     font-family: 'Poppins';
     font-weight: 900;
-    src: url('../fonts/poppins-v21-latin-900.woff2') format('woff2');
+    src: url('./fonts/poppins-v21-latin-900.woff2') format('woff2');
 }
 
 :root {
@@ -32,15 +32,30 @@
     --color-brand-dark: #465929;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     color: var(--color-primary-dark);
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
+    margin: 0;
 }
 
-address {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin-top: 0;
+}
+
+
+p address {
     font-style: normal;
 }
 
@@ -48,7 +63,29 @@ ul {
     list-style-type: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+
+}
+
+.section {
+    padding: 48px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
 .button {
+    padding: 16px 32px;
     color: #FAF4EA;
     background: var(--color-brand-light);
     border: 2px solid var(--color-brand-light);
@@ -72,9 +109,14 @@ ul {
     font-weight: 600;
 }
 
+.hero-section {
+    padding: 272px 0;
+}
+
 .hero-title {
     color: var(--color-primary-light);
     font-family: 'Poppins', sans-serif;
+    text-align: center;
     font-weight: 900;
     font-size: 128px;
 }
@@ -103,6 +145,14 @@ ul {
     color: var(--color-brand-dark);
 }
 
+.tarditions-title {
+    margin-bottom: 42px;
+}
+
+.traditions-section {
+    padding-top: 96px;
+}
+
 .traditions-text .brand {
     color: var(--color-brand-dark);
     font-weight: 600;
@@ -113,10 +163,20 @@ ul {
     text-transform: uppercase;
 }
 
+.chefs-title {
+    margin-bottom: 80px;
+}
+
 .chef-title {
+    margin-bottom: 16px;
     font-size: 40px;
     font-weight: 600;
 }
+
+.formats-title {
+    margin-bottom: 80px;
+}
+
 
 .format-title {
     font-size: 24px;
@@ -126,6 +186,10 @@ ul {
 .format-text {
     font-size: 14px;
     font-weight: 300;
+}
+
+.contacrs-title {
+    margin-bottom: 16px;
 }
 
 .address-link {
